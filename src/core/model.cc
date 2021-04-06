@@ -1,18 +1,18 @@
-#include <core/trainer.h>
+#include <core/model.h>
 
 namespace naivebayes {
 
-    Trainer::Trainer() { }
+    Model::Model() { }
 
-    const std::vector<double> & Trainer::GetProbClassC() const {
+    const std::vector<double> & Model::GetProbClassC() const {
         return prob_class_c_values;
     }
 
-    const std::vector<std::vector<std::vector<std::vector<double>>>> & Trainer::GetProbPixelVals() const {
+    const std::vector<std::vector<std::vector<std::vector<double>>>> & Model::GetProbPixelVals() const {
         return prob_pixel_shade_;
     }
 
-    void Trainer::TrainProbClassC(const std::vector<Image>& images) {
+    void Model::TrainProbClassC(const std::vector<Image>& images) {
         for (size_t i = 0; i < kNumValues; i++) {
             double num_images = 0;
             for (const Image& image : images) {
@@ -25,7 +25,7 @@ namespace naivebayes {
         }
     }
 
-    void Trainer::TrainProbEachPixel(const std::vector<Image>& images) {
+    void Model::TrainProbEachPixel(const std::vector<Image>& images) {
         image_size_ = images[0].GetSize();
        for (int row = 0; row < images[0].GetSize(); row++) {
             std::vector<std::vector<std::vector<double>>> columns;

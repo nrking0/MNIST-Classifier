@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/train_model_main.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/train-model.dir/apps/train_model_main.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/train-model.dir/src/core/image.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image_processor.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/train-model.dir/src/core/image_processor.cc.o"
-  "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/trainer.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/train-model.dir/src/core/trainer.cc.o"
+  "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/model.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/train-model.dir/src/core/model.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

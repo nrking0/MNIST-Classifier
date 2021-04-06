@@ -289,38 +289,38 @@ src/core/image_processor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.s
 .PHONY : src/core/image_processor.cc.s
 
-src/core/trainer.o: src/core/trainer.cc.o
+src/core/model.o: src/core/model.cc.o
 
-.PHONY : src/core/trainer.o
+.PHONY : src/core/model.o
 
 # target to build an object file
-src/core/trainer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.o
-.PHONY : src/core/trainer.cc.o
+src/core/model.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/model.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/model.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o
+.PHONY : src/core/model.cc.o
 
-src/core/trainer.i: src/core/trainer.cc.i
+src/core/model.i: src/core/model.cc.i
 
-.PHONY : src/core/trainer.i
+.PHONY : src/core/model.i
 
 # target to preprocess a source file
-src/core/trainer.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.i
-.PHONY : src/core/trainer.cc.i
+src/core/model.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/model.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/model.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/model.cc.i
+.PHONY : src/core/model.cc.i
 
-src/core/trainer.s: src/core/trainer.cc.s
+src/core/model.s: src/core/model.cc.s
 
-.PHONY : src/core/trainer.s
+.PHONY : src/core/model.s
 
 # target to generate assembly for a file
-src/core/trainer.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.s
-.PHONY : src/core/trainer.cc.s
+src/core/model.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/model.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/model.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/model.cc.s
+.PHONY : src/core/model.cc.s
 
 src/visualizer/naive_bayes_app.o: src/visualizer/naive_bayes_app.cc.o
 
@@ -382,32 +382,86 @@ src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
-tests/rename_this_test_file.o: tests/rename_this_test_file.cc.o
+tests/image_processor_test.o: tests/image_processor_test.cc.o
 
-.PHONY : tests/rename_this_test_file.o
+.PHONY : tests/image_processor_test.o
 
 # target to build an object file
-tests/rename_this_test_file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/rename_this_test_file.cc.o
-.PHONY : tests/rename_this_test_file.cc.o
+tests/image_processor_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o
+.PHONY : tests/image_processor_test.cc.o
 
-tests/rename_this_test_file.i: tests/rename_this_test_file.cc.i
+tests/image_processor_test.i: tests/image_processor_test.cc.i
 
-.PHONY : tests/rename_this_test_file.i
+.PHONY : tests/image_processor_test.i
 
 # target to preprocess a source file
-tests/rename_this_test_file.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/rename_this_test_file.cc.i
-.PHONY : tests/rename_this_test_file.cc.i
+tests/image_processor_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.i
+.PHONY : tests/image_processor_test.cc.i
 
-tests/rename_this_test_file.s: tests/rename_this_test_file.cc.s
+tests/image_processor_test.s: tests/image_processor_test.cc.s
 
-.PHONY : tests/rename_this_test_file.s
+.PHONY : tests/image_processor_test.s
 
 # target to generate assembly for a file
-tests/rename_this_test_file.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/rename_this_test_file.cc.s
-.PHONY : tests/rename_this_test_file.cc.s
+tests/image_processor_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.s
+.PHONY : tests/image_processor_test.cc.s
+
+tests/image_test.o: tests/image_test.cc.o
+
+.PHONY : tests/image_test.o
+
+# target to build an object file
+tests/image_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o
+.PHONY : tests/image_test.cc.o
+
+tests/image_test.i: tests/image_test.cc.i
+
+.PHONY : tests/image_test.i
+
+# target to preprocess a source file
+tests/image_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.i
+.PHONY : tests/image_test.cc.i
+
+tests/image_test.s: tests/image_test.cc.s
+
+.PHONY : tests/image_test.s
+
+# target to generate assembly for a file
+tests/image_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.s
+.PHONY : tests/image_test.cc.s
+
+tests/model_test.o: tests/model_test.cc.o
+
+.PHONY : tests/model_test.o
+
+# target to build an object file
+tests/model_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o
+.PHONY : tests/model_test.cc.o
+
+tests/model_test.i: tests/model_test.cc.i
+
+.PHONY : tests/model_test.i
+
+# target to preprocess a source file
+tests/model_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.i
+.PHONY : tests/model_test.cc.i
+
+tests/model_test.s: tests/model_test.cc.s
+
+.PHONY : tests/model_test.s
+
+# target to generate assembly for a file
+tests/model_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.s
+.PHONY : tests/model_test.cc.s
 
 tests/test_main.o: tests/test_main.cc.o
 
@@ -459,18 +513,24 @@ help:
 	@echo "... src/core/image_processor.o"
 	@echo "... src/core/image_processor.i"
 	@echo "... src/core/image_processor.s"
-	@echo "... src/core/trainer.o"
-	@echo "... src/core/trainer.i"
-	@echo "... src/core/trainer.s"
+	@echo "... src/core/model.o"
+	@echo "... src/core/model.i"
+	@echo "... src/core/model.s"
 	@echo "... src/visualizer/naive_bayes_app.o"
 	@echo "... src/visualizer/naive_bayes_app.i"
 	@echo "... src/visualizer/naive_bayes_app.s"
 	@echo "... src/visualizer/sketchpad.o"
 	@echo "... src/visualizer/sketchpad.i"
 	@echo "... src/visualizer/sketchpad.s"
-	@echo "... tests/rename_this_test_file.o"
-	@echo "... tests/rename_this_test_file.i"
-	@echo "... tests/rename_this_test_file.s"
+	@echo "... tests/image_processor_test.o"
+	@echo "... tests/image_processor_test.i"
+	@echo "... tests/image_processor_test.s"
+	@echo "... tests/image_test.o"
+	@echo "... tests/image_test.i"
+	@echo "... tests/image_test.s"
+	@echo "... tests/model_test.o"
+	@echo "... tests/model_test.i"
+	@echo "... tests/model_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

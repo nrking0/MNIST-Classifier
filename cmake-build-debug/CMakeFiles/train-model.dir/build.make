@@ -90,18 +90,18 @@ CMakeFiles/train-model.dir/apps/train_model_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/apps/train_model_main.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/train_model_main.cc -o CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 
-CMakeFiles/train-model.dir/src/core/trainer.cc.o: CMakeFiles/train-model.dir/flags.make
-CMakeFiles/train-model.dir/src/core/trainer.cc.o: ../src/core/trainer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/trainer.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/trainer.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/trainer.cc
+CMakeFiles/train-model.dir/src/core/model.cc.o: CMakeFiles/train-model.dir/flags.make
+CMakeFiles/train-model.dir/src/core/model.cc.o: ../src/core/model.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/model.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/model.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/model.cc
 
-CMakeFiles/train-model.dir/src/core/trainer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/trainer.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/trainer.cc > CMakeFiles/train-model.dir/src/core/trainer.cc.i
+CMakeFiles/train-model.dir/src/core/model.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/model.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/model.cc > CMakeFiles/train-model.dir/src/core/model.cc.i
 
-CMakeFiles/train-model.dir/src/core/trainer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/trainer.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/trainer.cc -o CMakeFiles/train-model.dir/src/core/trainer.cc.s
+CMakeFiles/train-model.dir/src/core/model.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/model.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/model.cc -o CMakeFiles/train-model.dir/src/core/model.cc.s
 
 CMakeFiles/train-model.dir/src/core/image.cc.o: CMakeFiles/train-model.dir/flags.make
 CMakeFiles/train-model.dir/src/core/image.cc.o: ../src/core/image.cc
@@ -132,7 +132,7 @@ CMakeFiles/train-model.dir/src/core/image_processor.cc.s: cmake_force
 # Object files for target train-model
 train__model_OBJECTS = \
 "CMakeFiles/train-model.dir/apps/train_model_main.cc.o" \
-"CMakeFiles/train-model.dir/src/core/trainer.cc.o" \
+"CMakeFiles/train-model.dir/src/core/model.cc.o" \
 "CMakeFiles/train-model.dir/src/core/image.cc.o" \
 "CMakeFiles/train-model.dir/src/core/image_processor.cc.o"
 
@@ -140,7 +140,7 @@ train__model_OBJECTS = \
 train__model_EXTERNAL_OBJECTS =
 
 train-model: CMakeFiles/train-model.dir/apps/train_model_main.cc.o
-train-model: CMakeFiles/train-model.dir/src/core/trainer.cc.o
+train-model: CMakeFiles/train-model.dir/src/core/model.cc.o
 train-model: CMakeFiles/train-model.dir/src/core/image.cc.o
 train-model: CMakeFiles/train-model.dir/src/core/image_processor.cc.o
 train-model: CMakeFiles/train-model.dir/build.make

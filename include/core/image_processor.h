@@ -6,14 +6,24 @@
 
 namespace naivebayes {
 
+    /** Class used to take in a file and process it into images. */
     class ImageProcessor {
     public:
+        /** Basic constructor for set up. */
         ImageProcessor();
 
         const std::vector<Image>& GetImages() const;
 
+        /** Basic output method for console displaying. */
         void display() const;
 
+        /**
+         * Overload for the input operator to take in a file and process it into a vector of images.
+         *
+         * @param is input stream, in this case a file
+         * @param imageProcessor the image processor that will receive the data
+         * @return the input stream after finished
+         */
         friend std::istream& operator>>(std::istream& is, ImageProcessor& imageProcessor) {
             std::string curr_line;
             while (std::getline(is, curr_line)) {
@@ -41,6 +51,6 @@ namespace naivebayes {
     };
 
 
-}
+} // namespace naivebayes
 
 #endif //NAIVE_BAYES_IMAGE_PROCESSOR_H

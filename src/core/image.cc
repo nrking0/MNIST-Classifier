@@ -19,11 +19,11 @@ namespace naivebayes {
         }
     }
 
-    int Image::GetPixelShade(const int row, const int col) const {
+    int Image::GetPixelShade(int row, int col) const {
         return pixels_[row][col];
     }
 
-    void Image::AddPixelRow(const std::vector<int> row) {
+    void Image::AddPixelRow(const std::vector<int>& row) {
         this->pixels_.push_back(row);
     }
 
@@ -36,4 +36,4 @@ namespace naivebayes {
         }
         std::cout <<std::endl;
     }
-}
+} // namespace naivebayes

@@ -13,5 +13,5 @@ namespace naivebayes {
             i.display();
         }
     }
-}
+} // namespace naivebayes
 
