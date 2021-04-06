@@ -10,6 +10,7 @@ namespace naivebayes {
         Image(int value);
         void AddPixelRow(const std::vector<int> row);
         void display();
+        int GetValue() const;
 
     private:
         int value_;

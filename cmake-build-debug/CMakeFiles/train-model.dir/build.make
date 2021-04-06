@@ -90,18 +90,18 @@ CMakeFiles/train-model.dir/apps/train_model_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/apps/train_model_main.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/train_model_main.cc -o CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 
-CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o: CMakeFiles/train-model.dir/flags.make
-CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o: ../src/core/rename_this_file.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc
+CMakeFiles/train-model.dir/src/core/Trainer.cc.o: CMakeFiles/train-model.dir/flags.make
+CMakeFiles/train-model.dir/src/core/Trainer.cc.o: ../src/core/Trainer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/Trainer.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/Trainer.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc
 
-CMakeFiles/train-model.dir/src/core/rename_this_file.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/rename_this_file.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc > CMakeFiles/train-model.dir/src/core/rename_this_file.cc.i
+CMakeFiles/train-model.dir/src/core/Trainer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/Trainer.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc > CMakeFiles/train-model.dir/src/core/Trainer.cc.i
 
-CMakeFiles/train-model.dir/src/core/rename_this_file.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/rename_this_file.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc -o CMakeFiles/train-model.dir/src/core/rename_this_file.cc.s
+CMakeFiles/train-model.dir/src/core/Trainer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/Trainer.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc -o CMakeFiles/train-model.dir/src/core/Trainer.cc.s
 
 CMakeFiles/train-model.dir/src/core/image.cc.o: CMakeFiles/train-model.dir/flags.make
 CMakeFiles/train-model.dir/src/core/image.cc.o: ../src/core/image.cc
@@ -119,14 +119,14 @@ CMakeFiles/train-model.dir/src/core/image.cc.s: cmake_force
 # Object files for target train-model
 train__model_OBJECTS = \
 "CMakeFiles/train-model.dir/apps/train_model_main.cc.o" \
-"CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o" \
+"CMakeFiles/train-model.dir/src/core/Trainer.cc.o" \
 "CMakeFiles/train-model.dir/src/core/image.cc.o"
 
 # External object files for target train-model
 train__model_EXTERNAL_OBJECTS =
 
 train-model: CMakeFiles/train-model.dir/apps/train_model_main.cc.o
-train-model: CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o
+train-model: CMakeFiles/train-model.dir/src/core/Trainer.cc.o
 train-model: CMakeFiles/train-model.dir/src/core/image.cc.o
 train-model: CMakeFiles/train-model.dir/build.make
 train-model: CMakeFiles/train-model.dir/link.txt

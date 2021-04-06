@@ -94,18 +94,18 @@ CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/cinder_app_main.cc -o CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s
 
-CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
-CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o: ../src/core/rename_this_file.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc
+CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
+CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o: ../src/core/Trainer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc
 
-CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc > CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.i
+CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc > CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.i
 
-CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.s
+CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.s
 
 CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
 CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o: ../src/core/image.cc
@@ -149,7 +149,7 @@ CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s: cmake_force
 # Object files for target sketchpad-classifier
 sketchpad__classifier_OBJECTS = \
 "CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o" \
-"CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o" \
+"CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/naive_bayes_app.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
@@ -158,7 +158,7 @@ sketchpad__classifier_OBJECTS = \
 sketchpad__classifier_EXTERNAL_OBJECTS =
 
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o
-Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o
+Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/naive_bayes_app.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o

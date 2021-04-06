@@ -11,6 +11,7 @@ class Trainer {
  public:
   Trainer();
   void display();
+  void TrainProbClassC();
 
   friend std::istream& operator>>(std::istream& input, Trainer& data){
       std::string curr_line;
@@ -37,6 +38,10 @@ class Trainer {
 
 
 private:
+    const static int kKValue = 1;
+    const static int kNumShadingOptions = 2;
+    const static int kNumValues = 10;
+    std::vector<double> prob_class_c_values;
     std::map<int, Image> training_data_;
     std::vector<Image> images_;
 };

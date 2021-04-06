@@ -7,6 +7,10 @@ namespace naivebayes {
         this->value_ = value;
     }
 
+    int Image::GetValue() const {
+        return this->value_;
+    }
+
     void Image::AddPixelRow(const std::vector<int> row) {
         this->pixels_.push_back(row);
     }

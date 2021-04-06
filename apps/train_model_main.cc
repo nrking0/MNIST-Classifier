@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <core/rename_this_file.h>
+#include <core/Trainer.h>
 #include <core/image.h>
 #include <fstream>
 
@@ -14,5 +14,7 @@ int main() {
       input_file.close();
   }
   trainer.display();
+
+  trainer.TrainProbClassC();
   return 0;
 }

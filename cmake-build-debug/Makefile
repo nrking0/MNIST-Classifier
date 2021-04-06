@@ -223,6 +223,39 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
+src/core/Trainer.o: src/core/Trainer.cc.o
+
+.PHONY : src/core/Trainer.o
+
+# target to build an object file
+src/core/Trainer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.o
+.PHONY : src/core/Trainer.cc.o
+
+src/core/Trainer.i: src/core/Trainer.cc.i
+
+.PHONY : src/core/Trainer.i
+
+# target to preprocess a source file
+src/core/Trainer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.i
+.PHONY : src/core/Trainer.cc.i
+
+src/core/Trainer.s: src/core/Trainer.cc.s
+
+.PHONY : src/core/Trainer.s
+
+# target to generate assembly for a file
+src/core/Trainer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.s
+.PHONY : src/core/Trainer.cc.s
+
 src/core/image.o: src/core/image.cc.o
 
 .PHONY : src/core/image.o
@@ -255,39 +288,6 @@ src/core/image.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image.cc.s
 .PHONY : src/core/image.cc.s
-
-src/core/rename_this_file.o: src/core/rename_this_file.cc.o
-
-.PHONY : src/core/rename_this_file.o
-
-# target to build an object file
-src/core/rename_this_file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/rename_this_file.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/rename_this_file.cc.o
-.PHONY : src/core/rename_this_file.cc.o
-
-src/core/rename_this_file.i: src/core/rename_this_file.cc.i
-
-.PHONY : src/core/rename_this_file.i
-
-# target to preprocess a source file
-src/core/rename_this_file.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/rename_this_file.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/rename_this_file.cc.i
-.PHONY : src/core/rename_this_file.cc.i
-
-src/core/rename_this_file.s: src/core/rename_this_file.cc.s
-
-.PHONY : src/core/rename_this_file.s
-
-# target to generate assembly for a file
-src/core/rename_this_file.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/rename_this_file.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/rename_this_file.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/rename_this_file.cc.s
-.PHONY : src/core/rename_this_file.cc.s
 
 src/visualizer/naive_bayes_app.o: src/visualizer/naive_bayes_app.cc.o
 
@@ -420,12 +420,12 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
+	@echo "... src/core/Trainer.o"
+	@echo "... src/core/Trainer.i"
+	@echo "... src/core/Trainer.s"
 	@echo "... src/core/image.o"
 	@echo "... src/core/image.i"
 	@echo "... src/core/image.s"
-	@echo "... src/core/rename_this_file.o"
-	@echo "... src/core/rename_this_file.i"
-	@echo "... src/core/rename_this_file.s"
 	@echo "... src/visualizer/naive_bayes_app.o"
 	@echo "... src/visualizer/naive_bayes_app.i"
 	@echo "... src/visualizer/naive_bayes_app.s"

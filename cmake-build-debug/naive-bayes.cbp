@@ -190,12 +190,12 @@
 		<Unit filename="/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/train_model_main.cc">
 			<Option target="train-model"/>
 		</Unit>
-		<Unit filename="/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image.cc">
+		<Unit filename="/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/Trainer.cc">
 			<Option target="sketchpad-classifier"/>
 			<Option target="train-model"/>
 			<Option target="naive-bayes-test"/>
 		</Unit>
-		<Unit filename="/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc">
+		<Unit filename="/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image.cc">
 			<Option target="sketchpad-classifier"/>
 			<Option target="train-model"/>
 			<Option target="naive-bayes-test"/>
