@@ -8,6 +8,7 @@ namespace naivebayes {
 
     /** Class used to take in a file and process it into images. */
     class ImageProcessor {
+
     public:
         /** Basic constructor for set up. */
         ImageProcessor();
@@ -39,7 +40,7 @@ namespace naivebayes {
                             image_row.push_back(1);
                         }
                     }
-                    int size = imageProcessor.images_.size() - 1;
+                    size_t size = imageProcessor.images_.size() - 1;
                     imageProcessor.images_[size].AddPixelRow(image_row);
                 }
             }

@@ -1,1 +1,4 @@
 #include <catch2/catch.hpp>
+#include <core/image.h>
+
+

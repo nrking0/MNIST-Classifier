@@ -32,7 +32,7 @@ namespace naivebayes {
 
 
         const std::vector<double> &GetProbClassC() const;
-        const std::vector<std::vector<std::vector<std::vector<double>>>> &GetProbPixelVals() const;
+        const std::vector<std::vector<std::vector<std::vector<double>>>> &GetProbPixelValues() const;
 
         /**
          * Overload for input operator, takes in file data from a previous model and matches data to class structures.
@@ -43,22 +43,22 @@ namespace naivebayes {
          */
         friend std::istream &operator>>(std::istream &input, Model &data) {
             std::string curr_line;
-            bool pixel_probs = false;
+            bool reading_pixel_prob = false;
             while (std::getline(input, curr_line)) {
-                if (curr_line.empty() && pixel_probs) {
+                if (curr_line.empty() && reading_pixel_prob) {
                     continue;
-                } else if (curr_line.empty() && !pixel_probs) {
-                    pixel_probs = true;
+                } else if (curr_line.empty() && !reading_pixel_prob) {
+                    reading_pixel_prob = true;
                     std::getline(input, curr_line);
                     data.image_size_ = std::stoi(curr_line);
-                } else if (pixel_probs) {
-                    for (int row = 0; row < data.image_size_; row++) {
+                } else if (reading_pixel_prob) {
+                    for (size_t row = 0; row < data.image_size_; row++) {
                         std::vector<std::vector<std::vector<double>>> columns;
-                        for (int col = 0; col < data.image_size_; col++) {
+                        for (size_t col = 0; col < data.image_size_; col++) {
                             std::vector<std::vector<double>> values;
-                            for (int val = 0; val < kNumValues; val++) {
+                            for (size_t val = 0; val < kNumValues; val++) {
                                 std::vector<double> shades;
-                                for (int shade = 0; shade < kNumShadingOptions; shade++) {
+                                for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
                                     try {
 
                                         shades.push_back(std::stod(curr_line));

@@ -2,15 +2,15 @@
 
 namespace naivebayes {
 
-    ImageProcessor::ImageProcessor() {}
+    ImageProcessor::ImageProcessor() = default;
 
     const std::vector<Image> & ImageProcessor::GetImages() const {
         return images_;
     }
 
     void ImageProcessor::display() const {
-        for (Image i : images_) {
-            i.display();
+        for (const Image& image : images_) {
+            image.display();
         }
     }
 } // namespace naivebayes

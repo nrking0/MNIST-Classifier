@@ -23,7 +23,7 @@ namespace naivebayes {
         void AddPixelRow(const std::vector<int>& row);
 
         /** Simply outputs a representation of the image to the console. */
-        void display();
+        void display() const;
 
         int GetValue() const;
         int GetSize() const;

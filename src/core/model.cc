@@ -8,7 +8,7 @@ namespace naivebayes {
         return prob_class_c_values;
     }
 
-    const std::vector<std::vector<std::vector<std::vector<double>>>> & Model::GetProbPixelVals() const {
+    const std::vector<std::vector<std::vector<std::vector<double>>>> & Model::GetProbPixelValues() const {
         return prob_pixel_shade_;
     }
 
@@ -27,13 +27,13 @@ namespace naivebayes {
 
     void Model::TrainProbEachPixel(const std::vector<Image>& images) {
         image_size_ = images[0].GetSize();
-       for (int row = 0; row < images[0].GetSize(); row++) {
+       for (size_t row = 0; row < images[0].GetSize(); row++) {
             std::vector<std::vector<std::vector<double>>> columns;
-            for (int col = 0; col < images[0].GetSize(); col++) {
+            for (size_t col = 0; col < images[0].GetSize(); col++) {
                 std::vector<std::vector<double>> values;
-                for (int val = 0; val < kNumValues; val++) {
+                for (size_t val = 0; val < kNumValues; val++) {
                     std::vector<double> shades;
-                    for (int shade = 0; shade < kNumShadingOptions; shade++) {
+                    for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
                         int num_images = 0;
                         int num_images_with_shade = 0;
                         for (const Image &image : images) {

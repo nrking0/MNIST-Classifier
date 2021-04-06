@@ -27,9 +27,9 @@ namespace naivebayes {
         this->pixels_.push_back(row);
     }
 
-    void Image::display() {
-        for (std::vector<int> v : pixels_) {
-            for (int i : v) {
+    void Image::display() const {
+        for (const std::vector<int>& vector : pixels_) {
+            for (int i : vector) {
                 std::cout << i;
             }
             std::cout << std::endl;
