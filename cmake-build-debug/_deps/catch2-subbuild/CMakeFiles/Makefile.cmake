@@ -7,10 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeDetermineSystem.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeGenericSystem.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeSystem.cmake.in"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/ExternalProject.cmake"
@@ -34,7 +32,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.17.5/CMakeSystem.cmake"
   "catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-gitinfo.txt"
   "catch2-populate-prefix/tmp/catch2-populate-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

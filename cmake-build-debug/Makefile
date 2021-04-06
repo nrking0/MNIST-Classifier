@@ -223,6 +223,39 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
+src/core/image.o: src/core/image.cc.o
+
+.PHONY : src/core/image.o
+
+# target to build an object file
+src/core/image.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image.cc.o
+.PHONY : src/core/image.cc.o
+
+src/core/image.i: src/core/image.cc.i
+
+.PHONY : src/core/image.i
+
+# target to preprocess a source file
+src/core/image.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image.cc.i
+.PHONY : src/core/image.cc.i
+
+src/core/image.s: src/core/image.cc.s
+
+.PHONY : src/core/image.s
+
+# target to generate assembly for a file
+src/core/image.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image.cc.s
+.PHONY : src/core/image.cc.s
+
 src/core/rename_this_file.o: src/core/rename_this_file.cc.o
 
 .PHONY : src/core/rename_this_file.o
@@ -387,6 +420,9 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
+	@echo "... src/core/image.o"
+	@echo "... src/core/image.i"
+	@echo "... src/core/image.s"
 	@echo "... src/core/rename_this_file.o"
 	@echo "... src/core/rename_this_file.i"
 	@echo "... src/core/rename_this_file.s"

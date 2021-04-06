@@ -1,22 +1,47 @@
 #include <string>
+#include <map>
+#include <core/image.h>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 namespace naivebayes {
 
-class Placeholder {
+class Trainer {
  public:
-  std::string GetBestClass() const;
+  Trainer();
+  void display();
+
+  friend std::istream& operator>>(std::istream& input, Trainer& data){
+      std::string curr_line;
+      while (std::getline(input, curr_line)) {
+          if (std::isdigit(curr_line[0])) {
+              Image image = Image(std::stoi(curr_line));
+              data.images_.push_back(image);
+          } else {
+              std::vector<int> image_row;
+              for (char pixel : curr_line) {
+                  if (pixel == ' ') {
+                      image_row.push_back(0);
+                  } else {
+                      image_row.push_back(1);
+                  }
+              }
+              int size = data.images_.size() - 1;
+              data.images_[size].AddPixelRow(image_row);
+          }
+      }
+      return input;
+  };
+
+
+
+private:
+    std::map<int, Image> training_data_;
+    std::vector<Image> images_;
 };
+
+
 
 }  // namespace naivebayes
 
-/*
-TODO: rename this file. You'll also need to modify CMakeLists.txt.
-
-You can (and should) create more classes and files in include/core (header
- files) and src/core (source files); this project is too big to only have a
- single class.
-
-Make sure to add any files that you create to CMakeLists.txt.
-
-TODO Delete this comment before submitting your code.
-*/

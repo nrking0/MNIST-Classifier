@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/src/core/image.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/rename_this_file.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/src/core/rename_this_file.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/visualizer/naive_bayes_app.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/visualizer/sketchpad.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o"

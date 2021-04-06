@@ -2,8 +2,13 @@
 
 namespace naivebayes {
 
-std::string Placeholder::GetBestClass() const {
-  return "CS 126";
-}
+    Trainer::Trainer() {}
+
+
+    void Trainer::display() {
+        for (Image i : images_) {
+            i.display();
+        }
+    }
 
 }  // namespace naivebayes

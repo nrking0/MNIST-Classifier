@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/naive-bayes-test.dir/src/core/image.cc.o"
   "CMakeFiles/naive-bayes-test.dir/src/core/rename_this_file.cc.o"
   "CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o"
   "CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o"
