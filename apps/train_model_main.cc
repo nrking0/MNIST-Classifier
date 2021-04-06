@@ -4,17 +4,18 @@
 #include <core/image.h>
 #include <fstream>
 
-// TODO: You may want to change main's signature to take in argc and argv
+
 int main() {
 
     naivebayes::Trainer trainer = naivebayes::Trainer();
-  std::ifstream input_file("../data/trainingimagesandlabels.txt");
+  std::ifstream input_file("../data/test.txt");
   if (input_file.is_open()) {
       input_file >> trainer;
       input_file.close();
   }
   trainer.display();
 
-  trainer.TrainProbClassC();
+  trainer.TrainProbEachPixel();
+
   return 0;
 }

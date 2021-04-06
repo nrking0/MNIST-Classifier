@@ -11,6 +11,8 @@ namespace naivebayes {
         void AddPixelRow(const std::vector<int> row);
         void display();
         int GetValue() const;
+        int GetSize() const;
+        int GetPixelShade(const int row, const int col) const;
 
     private:
         int value_;
