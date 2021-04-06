@@ -223,39 +223,6 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
-src/core/Trainer.o: src/core/Trainer.cc.o
-
-.PHONY : src/core/Trainer.o
-
-# target to build an object file
-src/core/Trainer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.o
-.PHONY : src/core/Trainer.cc.o
-
-src/core/Trainer.i: src/core/Trainer.cc.i
-
-.PHONY : src/core/Trainer.i
-
-# target to preprocess a source file
-src/core/Trainer.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.i
-.PHONY : src/core/Trainer.cc.i
-
-src/core/Trainer.s: src/core/Trainer.cc.s
-
-.PHONY : src/core/Trainer.s
-
-# target to generate assembly for a file
-src/core/Trainer.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/Trainer.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/Trainer.cc.s
-.PHONY : src/core/Trainer.cc.s
-
 src/core/image.o: src/core/image.cc.o
 
 .PHONY : src/core/image.o
@@ -288,6 +255,72 @@ src/core/image.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image.cc.s
 .PHONY : src/core/image.cc.s
+
+src/core/image_processor.o: src/core/image_processor.cc.o
+
+.PHONY : src/core/image_processor.o
+
+# target to build an object file
+src/core/image_processor.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image_processor.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image_processor.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.o
+.PHONY : src/core/image_processor.cc.o
+
+src/core/image_processor.i: src/core/image_processor.cc.i
+
+.PHONY : src/core/image_processor.i
+
+# target to preprocess a source file
+src/core/image_processor.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image_processor.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image_processor.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.i
+.PHONY : src/core/image_processor.cc.i
+
+src/core/image_processor.s: src/core/image_processor.cc.s
+
+.PHONY : src/core/image_processor.s
+
+# target to generate assembly for a file
+src/core/image_processor.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/image_processor.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/image_processor.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.s
+.PHONY : src/core/image_processor.cc.s
+
+src/core/trainer.o: src/core/trainer.cc.o
+
+.PHONY : src/core/trainer.o
+
+# target to build an object file
+src/core/trainer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.o
+.PHONY : src/core/trainer.cc.o
+
+src/core/trainer.i: src/core/trainer.cc.i
+
+.PHONY : src/core/trainer.i
+
+# target to preprocess a source file
+src/core/trainer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.i
+.PHONY : src/core/trainer.cc.i
+
+src/core/trainer.s: src/core/trainer.cc.s
+
+.PHONY : src/core/trainer.s
+
+# target to generate assembly for a file
+src/core/trainer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/trainer.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/trainer.cc.s
+.PHONY : src/core/trainer.cc.s
 
 src/visualizer/naive_bayes_app.o: src/visualizer/naive_bayes_app.cc.o
 
@@ -420,12 +453,15 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
-	@echo "... src/core/Trainer.o"
-	@echo "... src/core/Trainer.i"
-	@echo "... src/core/Trainer.s"
 	@echo "... src/core/image.o"
 	@echo "... src/core/image.i"
 	@echo "... src/core/image.s"
+	@echo "... src/core/image_processor.o"
+	@echo "... src/core/image_processor.i"
+	@echo "... src/core/image_processor.s"
+	@echo "... src/core/trainer.o"
+	@echo "... src/core/trainer.i"
+	@echo "... src/core/trainer.s"
 	@echo "... src/visualizer/naive_bayes_app.o"
 	@echo "... src/visualizer/naive_bayes_app.i"
 	@echo "... src/visualizer/naive_bayes_app.s"

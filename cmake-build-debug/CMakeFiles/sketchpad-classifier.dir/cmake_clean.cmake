@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o"
-  "CMakeFiles/sketchpad-classifier.dir/src/core/Trainer.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o"
+  "CMakeFiles/sketchpad-classifier.dir/src/core/image_processor.cc.o"
+  "CMakeFiles/sketchpad-classifier.dir/src/core/trainer.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/visualizer/naive_bayes_app.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
   "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier"
