@@ -119,3 +119,16 @@ TEST_CASE("Reading model data in from file") {
         REQUIRE(prob_pixels[1][1][1][1] == Approx(0.666).epsilon(0.01));
     }
 }
+
+TEST_CASE("Read in from bad file path") {
+    Model model = Model();
+
+    std::ifstream output_file("randombadfile.txt");
+    if (output_file.is_open()) {
+        output_file >> model;
+        output_file.close();
+    }
+
+    REQUIRE(model.GetProbPixelValues().empty());
+    REQUIRE(model.GetProbClassC().empty());
+}

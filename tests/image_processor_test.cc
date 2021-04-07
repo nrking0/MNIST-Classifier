@@ -18,7 +18,6 @@ TEST_CASE("Read in image") {
             input_file.close();
         }
 
-        std::cout << imageProcessor.GetImages().size();
         const std::vector<Image>& images = imageProcessor.GetImages();
         REQUIRE(imageProcessor.GetImages().size() == 2);
         REQUIRE(images[0].GetValue() == 1);
