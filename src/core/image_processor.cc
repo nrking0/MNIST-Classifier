@@ -8,10 +8,5 @@ namespace naivebayes {
         return images_;
     }
 
-    void ImageProcessor::display() const {
-        for (const Image& image : images_) {
-            image.display();
-        }
-    }
 } // namespace naivebayes
 

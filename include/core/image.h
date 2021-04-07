@@ -2,6 +2,7 @@
 #define NAIVE_BAYES_IMAGE_H
 
 #include <vector>
+#include <iostream>
 
 namespace naivebayes {
 
@@ -22,8 +23,23 @@ namespace naivebayes {
          */
         void AddPixelRow(const std::vector<int>& row);
 
-        /** Simply outputs a representation of the image to the console. */
-        void display() const;
+        /**
+         * Simple overload of output operator in order to print out image.
+         *
+         * @param os output stream
+         * @param image image that will be displayed
+         * @return the output stream after finished
+         */
+        friend std::ostream& operator<<(std::ostream& os, Image& image) {
+            for (const std::vector<int>& vector : image.pixels_) {
+                for (int i : vector) {
+                    os << i;
+                }
+                os << std::endl;
+            }
+            os <<std::endl;
+            return os;
+        };
 
         int GetValue() const;
         int GetSize() const;

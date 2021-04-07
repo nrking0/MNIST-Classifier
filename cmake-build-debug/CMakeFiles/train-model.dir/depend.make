@@ -3,7 +3,7 @@
 
 CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../include/core/image.h
 CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../include/core/image_processor.h
-CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../include/core/trainer.h
+CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../include/core/model.h
 CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../apps/train_model_main.cc
 
 CMakeFiles/train-model.dir/src/core/image.cc.o: ../include/core/image.h
@@ -13,7 +13,7 @@ CMakeFiles/train-model.dir/src/core/image_processor.cc.o: ../include/core/image.
 CMakeFiles/train-model.dir/src/core/image_processor.cc.o: ../include/core/image_processor.h
 CMakeFiles/train-model.dir/src/core/image_processor.cc.o: ../src/core/image_processor.cc
 
-CMakeFiles/train-model.dir/src/core/trainer.cc.o: ../include/core/image.h
-CMakeFiles/train-model.dir/src/core/trainer.cc.o: ../include/core/trainer.h
-CMakeFiles/train-model.dir/src/core/trainer.cc.o: ../src/core/trainer.cc
+CMakeFiles/train-model.dir/src/core/model.cc.o: ../include/core/image.h
+CMakeFiles/train-model.dir/src/core/model.cc.o: ../include/core/model.h
+CMakeFiles/train-model.dir/src/core/model.cc.o: ../src/core/model.cc
 

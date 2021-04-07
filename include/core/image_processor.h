@@ -15,9 +15,6 @@ namespace naivebayes {
 
         const std::vector<Image>& GetImages() const;
 
-        /** Basic output method for console displaying. */
-        void display() const;
-
         /**
          * Overload for the input operator to take in a file and process it into a vector of images.
          *
@@ -45,6 +42,20 @@ namespace naivebayes {
                 }
             }
             return is;
+        };
+
+        /**
+         * Simple overload of output operator to display all images in console.
+         *
+         * @param os output stream
+         * @param imageProcessor the image processor whose images are to be displayed
+         * @return the output stream after finished
+         */
+        friend std::ostream& operator<<(std::ostream& os, ImageProcessor& imageProcessor) {
+            for (Image& image : imageProcessor.images_) {
+                os << image;
+            }
+            return os;
         };
 
     private:
