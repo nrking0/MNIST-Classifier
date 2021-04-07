@@ -13,6 +13,7 @@ namespace naivebayes {
     }
 
     void Model::TrainProbClassC(const std::vector<Image>& images) {
+        // Finding number of images belonging to each class then dividing by total image number
         for (size_t i = 0; i < kNumValues; i++) {
             double num_images = 0;
             for (const Image& image : images) {
@@ -27,13 +28,17 @@ namespace naivebayes {
 
     void Model::TrainProbEachPixel(const std::vector<Image>& images) {
         image_size_ = images[0].GetSize();
-       for (size_t row = 0; row < images[0].GetSize(); row++) {
+
+        // Iterating through all 4 dimensions of array then sequentially building each
+        // subarray to push up to next dimension
+       for (size_t row = 0; row < image_size_; row++) {
             std::vector<std::vector<std::vector<double>>> columns;
-            for (size_t col = 0; col < images[0].GetSize(); col++) {
+            for (size_t col = 0; col < image_size_; col++) {
                 std::vector<std::vector<double>> values;
                 for (size_t val = 0; val < kNumValues; val++) {
                     std::vector<double> shades;
                     for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
+                        // Calculating difference between pixels that match the given shade to total number of pixels
                         int num_images = 0;
                         int num_images_with_shade = 0;
                         for (const Image &image : images) {

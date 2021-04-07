@@ -45,13 +45,21 @@ namespace naivebayes {
             std::string curr_line;
             bool reading_pixel_prob = false;
             while (std::getline(input, curr_line)) {
+                // Checking for empty line at end of list and ignoring
                 if (curr_line.empty() && reading_pixel_prob) {
                     continue;
+
+                    // Checking for empty line that signifies move from class probabilities to pixel probabilities
                 } else if (curr_line.empty() && !reading_pixel_prob) {
                     reading_pixel_prob = true;
                     std::getline(input, curr_line);
+                    // Setting image size from first line on pixel probabilities list
                     data.image_size_ = std::stoi(curr_line);
+
+                    // Checking to see if pixel probability portion of file has been reached
                 } else if (reading_pixel_prob) {
+
+                    // Reading pixel probability one line at a time sequentially through 4D Array
                     for (size_t row = 0; row < data.image_size_; row++) {
                         std::vector<std::vector<std::vector<double>>> columns;
                         for (size_t col = 0; col < data.image_size_; col++) {
@@ -59,8 +67,8 @@ namespace naivebayes {
                             for (size_t val = 0; val < kNumValues; val++) {
                                 std::vector<double> shades;
                                 for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
+                                    // Try/Catch loop to prevent any problems with reading doubles
                                     try {
-
                                         shades.push_back(std::stod(curr_line));
                                     } catch (std::exception &e) {
                                         std::getline(input, curr_line);
@@ -75,6 +83,7 @@ namespace naivebayes {
                         data.prob_pixel_shade_.push_back(columns);
                     }
                 } else {
+                    // If no prior conditions true, just reading probability class values at beginning of file
                     data.prob_class_c_values.push_back(std::stod(curr_line));
                 }
             }
@@ -91,14 +100,20 @@ namespace naivebayes {
          */
         friend std::ostream &operator<<(std::ostream &os, Model &trainer) {
             for (double prob : trainer.prob_class_c_values) {
+                // Outputting class probabilities line by line first
                 os << prob << std::endl;
             }
+
+            // Empty line to separate class probabilities from pixel probabilities
             os << std::endl;
+
+            // First line of pixel probabilities is image size, so model knows size and can iterate properly
             os << trainer.image_size_ << std::endl;
             for (const std::vector<std::vector<std::vector<double>>> &rows : trainer.prob_pixel_shade_) {
                 for (const std::vector<std::vector<double>> &columns : rows) {
                     for (const std::vector<double> &values : columns) {
                         for (const double prob : values) {
+                            // Adding each probability of 4D array on new line
                             os << prob << std::endl;
                         }
                     }

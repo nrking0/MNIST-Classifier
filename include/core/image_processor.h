@@ -25,10 +25,12 @@ namespace naivebayes {
         friend std::istream& operator>>(std::istream& is, ImageProcessor& imageProcessor) {
             std::string curr_line;
             while (std::getline(is, curr_line)) {
+                // Checking to see if the line is just a number representing a new image
                 if (std::isdigit(curr_line[0])) {
                     Image image = Image(std::stoi(curr_line));
                     imageProcessor.images_.push_back(image);
                 } else {
+                    // Adding image row to latest image
                     std::vector<int> image_row;
                     for (char pixel : curr_line) {
                         if (pixel == ' ') {
