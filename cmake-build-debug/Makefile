@@ -223,6 +223,39 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
+src/core/classifier.o: src/core/classifier.cc.o
+
+.PHONY : src/core/classifier.o
+
+# target to build an object file
+src/core/classifier.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/classifier.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/classifier.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o
+.PHONY : src/core/classifier.cc.o
+
+src/core/classifier.i: src/core/classifier.cc.i
+
+.PHONY : src/core/classifier.i
+
+# target to preprocess a source file
+src/core/classifier.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/classifier.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/classifier.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.i
+.PHONY : src/core/classifier.cc.i
+
+src/core/classifier.s: src/core/classifier.cc.s
+
+.PHONY : src/core/classifier.s
+
+# target to generate assembly for a file
+src/core/classifier.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/classifier.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/classifier.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.s
+.PHONY : src/core/classifier.cc.s
+
 src/core/image.o: src/core/image.cc.o
 
 .PHONY : src/core/image.o
@@ -507,6 +540,9 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
+	@echo "... src/core/classifier.o"
+	@echo "... src/core/classifier.i"
+	@echo "... src/core/classifier.s"
 	@echo "... src/core/image.o"
 	@echo "... src/core/image.i"
 	@echo "... src/core/image.s"

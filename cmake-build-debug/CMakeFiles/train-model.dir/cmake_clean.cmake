@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/train-model.dir/apps/train_model_main.cc.o"
+  "CMakeFiles/train-model.dir/src/core/classifier.cc.o"
   "CMakeFiles/train-model.dir/src/core/image.cc.o"
   "CMakeFiles/train-model.dir/src/core/image_processor.cc.o"
   "CMakeFiles/train-model.dir/src/core/model.cc.o"

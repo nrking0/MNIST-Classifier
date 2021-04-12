@@ -33,10 +33,13 @@ namespace naivebayes {
         // subarray to push up to next dimension
        for (size_t row = 0; row < image_size_; row++) {
             std::vector<std::vector<std::vector<double>>> columns;
+
             for (size_t col = 0; col < image_size_; col++) {
                 std::vector<std::vector<double>> values;
+
                 for (size_t val = 0; val < kNumValues; val++) {
                     std::vector<double> shades;
+
                     for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
                         // Calculating difference between pixels that match the given shade to total number of pixels
                         int num_images = 0;

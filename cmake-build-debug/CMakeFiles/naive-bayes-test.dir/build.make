@@ -133,9 +133,22 @@ CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image_processor.cc -o CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.s
 
+CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
+CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../src/core/classifier.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/classifier.cc
+
+CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/classifier.cc > CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.i
+
+CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/classifier.cc -o CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.s
+
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../src/visualizer/naive_bayes_app.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/visualizer/naive_bayes_app.cc
 
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.i: cmake_force
@@ -148,7 +161,7 @@ CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.s: cmake_force
 
 CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o: ../src/visualizer/sketchpad.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/visualizer/sketchpad.cc
 
 CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.i: cmake_force
@@ -161,7 +174,7 @@ CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.s: cmake_force
 
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: ../tests/model_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/tests/model_test.cc
 
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.i: cmake_force
@@ -174,7 +187,7 @@ CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.s: cmake_force
 
 CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o: ../tests/image_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/tests/image_test.cc
 
 CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.i: cmake_force
@@ -187,7 +200,7 @@ CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.s: cmake_force
 
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: ../tests/image_processor_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o -c /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/tests/image_processor_test.cc
 
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.i: cmake_force
@@ -204,6 +217,7 @@ naive__bayes__test_OBJECTS = \
 "CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/core/image.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.o" \
+"CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o" \
@@ -217,6 +231,7 @@ Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMa
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/image.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.o
+Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o
@@ -227,7 +242,7 @@ Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: /Us
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: /Users/nrking0/Code/cinder_0.9.2_mac/lib/macosx/libboost_system.a
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: /Users/nrking0/Code/cinder_0.9.2_mac/lib/macosx/libboost_filesystem.a
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/naive-bayes-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

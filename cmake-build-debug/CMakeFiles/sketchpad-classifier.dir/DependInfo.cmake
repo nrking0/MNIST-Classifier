@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/apps/cinder_app_main.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o"
+  "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/classifier.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/classifier.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/image.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/image_processor.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/image_processor.cc.o"
   "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/src/core/model.cc" "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/model.cc.o"
