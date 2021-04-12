@@ -10,11 +10,16 @@ namespace naivebayes {
 class Classifier {
 
 public:
-    Classifier();
+    Classifier(Model model);
 
-    static void ClassifyImageSet(ImageProcessor& imageProcessor, Model& model);
+    void ClassifyImageSet(ImageProcessor& imageProcessor);
+
+    void ClassifyImage(Image& image);
 
     static double ValidateImageSetClassification(ImageProcessor& imageProcessor);
+
+private:
+    Model model_;
 };
 
 }

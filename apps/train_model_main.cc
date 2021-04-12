@@ -38,7 +38,8 @@ int main() {
         input_file2.close();
     }
 
-    naivebayes::Classifier::ClassifyImageSet(imageProcessor, model);
+    naivebayes::Classifier classifier = naivebayes::Classifier(model);
+    classifier.ClassifyImageSet(imageProcessor);
 
     double validation = naivebayes::Classifier::ValidateImageSetClassification(imageProcessor);
     std::cout << validation;

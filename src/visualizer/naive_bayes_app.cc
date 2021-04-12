@@ -40,9 +40,9 @@ void NaiveBayesApp::keyDown(ci::app::KeyEvent event) {
       // sketchpad and update current_prediction_
       break;
 
-    case ci::app::KeyEvent::KEY_DELETE:
-      sketchpad_.Clear();
-      break;
+    case ci::app::KeyEvent::KEY_BACKSPACE:
+        sketchpad_.Clear();
+        break;
   }
 }
 
