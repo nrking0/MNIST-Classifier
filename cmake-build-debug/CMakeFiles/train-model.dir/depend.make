@@ -8,6 +8,7 @@ CMakeFiles/train-model.dir/apps/train_model_main.cc.o: ../apps/train_model_main.
 
 CMakeFiles/train-model.dir/src/core/classifier.cc.o: ../include/core/classifier.h
 CMakeFiles/train-model.dir/src/core/classifier.cc.o: ../include/core/image.h
+CMakeFiles/train-model.dir/src/core/classifier.cc.o: ../include/core/image_processor.h
 CMakeFiles/train-model.dir/src/core/classifier.cc.o: ../include/core/model.h
 CMakeFiles/train-model.dir/src/core/classifier.cc.o: ../src/core/classifier.cc
 
@@ -19,6 +20,7 @@ CMakeFiles/train-model.dir/src/core/image_processor.cc.o: ../include/core/image_
 CMakeFiles/train-model.dir/src/core/image_processor.cc.o: ../src/core/image_processor.cc
 
 CMakeFiles/train-model.dir/src/core/model.cc.o: ../include/core/image.h
+CMakeFiles/train-model.dir/src/core/model.cc.o: ../include/core/image_processor.h
 CMakeFiles/train-model.dir/src/core/model.cc.o: ../include/core/model.h
 CMakeFiles/train-model.dir/src/core/model.cc.o: ../src/core/model.cc
 

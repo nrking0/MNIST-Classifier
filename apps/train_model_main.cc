@@ -22,5 +22,6 @@ int main() {
       output_file << model;
       output_file.close();
   }
+
   return 0;
 }

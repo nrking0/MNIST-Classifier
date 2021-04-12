@@ -26,7 +26,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
-  "_deps/catch2-src/single_include"
   "/Users/nrking0/Code/cinder_0.9.2_mac/include"
   )
 

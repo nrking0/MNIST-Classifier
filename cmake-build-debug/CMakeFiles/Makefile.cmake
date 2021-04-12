@@ -25,7 +25,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Compiler/Clang.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Compiler/GNU.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FetchContent.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FetchContent/CMakeLists.cmake.in"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/MacOSXBundleInfo.plist.in"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Platform/Apple-AppleClang-C.cmake"
@@ -56,19 +55,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "_deps/catch2-subbuild/CMakeLists.txt"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
   "Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS"
   "Debug/naive-bayes-test/naive-bayes-test.app/Contents/Info.plist"
   "Debug/naive-bayes-test/naive-bayes-test.app/Contents/Info.plist"
+  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS"
+  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
+  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/naive-bayes-test.dir/DependInfo.cmake"
   "CMakeFiles/sketchpad-classifier.dir/DependInfo.cmake"
   "CMakeFiles/train-model.dir/DependInfo.cmake"
-  "CMakeFiles/naive-bayes-test.dir/DependInfo.cmake"
   )

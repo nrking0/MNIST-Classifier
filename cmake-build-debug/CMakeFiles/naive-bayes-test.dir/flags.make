@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
 
-CXX_INCLUDES = -I/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/include -I/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/nrking0/Code/cinder_0.9.2_mac/include 
+CXX_INCLUDES = -I/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/include -isystem /Users/nrking0/Code/cinder_0.9.2_mac/include 
 

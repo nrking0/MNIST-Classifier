@@ -1,4 +1,23 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug
+[ 11%] Performing update step for 'catch2-populate'
+fatal: ambiguous argument 'v2.11.1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+error: pathspec 'v2.11.1' did not match any file(s) known to git
+CMake Error at /Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/tmp/catch2-populate-gitupdate.cmake:144 (message):
+  Failed to checkout tag: 'v2.11.1'
+
+
+make[2]: *** [catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update] Error 1
+make[1]: *** [CMakeFiles/catch2-populate.dir/all] Error 2
+make: *** [all] Error 2
+
+CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FetchContent.cmake:912 (message):
+  Build step for catch2 failed: 2
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FetchContent.cmake:1003 (__FetchContent_directPopulate)
+  CMakeLists.txt:42 (FetchContent_Populate)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/CMakeFiles/CMakeOutput.log".
