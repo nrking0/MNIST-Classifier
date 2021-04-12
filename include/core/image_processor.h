@@ -29,12 +29,15 @@ public:
             if (std::isdigit(curr_line[0])) {
                 Image image = Image(std::stoi(curr_line));
                 imageProcessor.images_.push_back(image);
+
             } else {
                 // Adding image row to latest image
                 std::vector<int> image_row;
+
                 for (char pixel : curr_line) {
                     if (pixel == ' ') {
                         image_row.push_back(0);
+
                     } else {
                         image_row.push_back(1);
                     }

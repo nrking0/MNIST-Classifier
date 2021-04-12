@@ -32,7 +32,9 @@ public:
      */
     friend std::ostream& operator<<(std::ostream& os, Image& image) {
         os << image.value_ << std::endl;
+
         for (const std::vector<int>& vector : image.pixels_) {
+
             for (int i : vector) {
                 os << i;
             }

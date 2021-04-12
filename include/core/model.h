@@ -62,10 +62,13 @@ public:
                 // Reading pixel probability one line at a time sequentially through 4D Array
                 for (size_t row = 0; row < data.image_size_; row++) {
                     std::vector<std::vector<std::vector<double>>> columns;
+
                     for (size_t col = 0; col < data.image_size_; col++) {
                         std::vector<std::vector<double>> values;
+
                         for (size_t val = 0; val < kNumValues; val++) {
                             std::vector<double> shades;
+
                             for (size_t shade = 0; shade < kNumShadingOptions; shade++) {
                                 // Try/Catch loop to prevent any problems with reading doubles
                                 try {
@@ -110,8 +113,11 @@ public:
         // First line of pixel probabilities is image size, so model knows size and can iterate properly
         os << trainer.image_size_ << std::endl;
         for (const std::vector<std::vector<std::vector<double>>> &rows : trainer.prob_pixel_shade_) {
+
             for (const std::vector<std::vector<double>> &columns : rows) {
+
                 for (const std::vector<double> &values : columns) {
+
                     for (const double prob : values) {
                         // Adding each probability of 4D array on new line
                         os << prob << std::endl;
