@@ -2,11 +2,11 @@
 
 namespace naivebayes {
 
-    ImageProcessor::ImageProcessor() = default;
+ImageProcessor::ImageProcessor() = default;
 
-    const std::vector<Image> & ImageProcessor::GetImages() const {
-        return images_;
-    }
+const std::vector<Image> & ImageProcessor::GetImages() const {
+    return images_;
+}
 
 } // namespace naivebayes
 

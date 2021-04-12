@@ -2,6 +2,7 @@
 
 namespace naivebayes {
 
-    Classifier::Classifier() {}
-}
+Classifier::Classifier() {}
+
+} // namespace naivebayes
 

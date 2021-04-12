@@ -6,13 +6,13 @@
 
 namespace naivebayes {
 
-    class Classifier {
+class Classifier {
 
-    public:
-        Classifier();
+public:
+    Classifier();
 
 
-    };
+};
 
 }
 
