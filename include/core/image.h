@@ -30,19 +30,7 @@ public:
      * @param image image that will be displayed
      * @return the output stream after finished
      */
-    friend std::ostream& operator<<(std::ostream& os, Image& image) {
-        os << image.value_ << std::endl;
-
-        for (const std::vector<int>& vector : image.pixels_) {
-
-            for (int i : vector) {
-                os << i;
-            }
-            os << std::endl;
-        }
-        os <<std::endl;
-        return os;
-    };
+    friend std::ostream& operator<<(std::ostream& os, Image& image);
 
     int GetValue() const;
     int GetSize() const;

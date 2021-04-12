@@ -27,4 +27,18 @@ void Image::AddPixelRow(const std::vector<int>& row) {
     this->pixels_.push_back(row);
 }
 
+std::ostream& operator<<(std::ostream& os, Image& image) {
+    os << image.value_ << std::endl;
+
+    for (const std::vector<int>& vector : image.pixels_) {
+
+        for (int i : vector) {
+            os << i;
+        }
+        os << std::endl;
+    }
+    os <<std::endl;
+    return os;
+}
+
 } // namespace naivebayes
