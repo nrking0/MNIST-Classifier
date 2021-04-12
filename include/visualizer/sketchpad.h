@@ -58,6 +58,8 @@ class Sketchpad {
   double pixel_side_length_;
 
   double brush_radius_;
+
+  std::vector<std::vector<int>> pixel_shade_vector_;
 };
 
 }  // namespace visualizer

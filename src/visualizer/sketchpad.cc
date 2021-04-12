@@ -11,7 +11,16 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
     : top_left_corner_(top_left_corner),
       num_pixels_per_side_(num_pixels_per_side),
       pixel_side_length_(sketchpad_size / num_pixels_per_side),
-      brush_radius_(brush_radius) {}
+      brush_radius_(brush_radius) {
+    for (size_t row = 0; row < num_pixels_per_side_; ++row) {
+        std::vector<int> rows;
+
+        for (size_t col = 0; col < num_pixels_per_side_; ++col) {
+            rows.push_back(0);
+        }
+        pixel_shade_vector_.push_back(rows);
+    }
+}
 
 void Sketchpad::Draw() const {
   for (size_t row = 0; row < num_pixels_per_side_; ++row) {
