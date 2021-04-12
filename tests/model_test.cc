@@ -15,8 +15,7 @@ TEST_CASE("Training Model") {
         input_file.close();
     }
 
-    model.TrainProbClassC(imageProcessor.GetImages());
-    model.TrainProbEachPixel(imageProcessor.GetImages());
+    model.Train(imageProcessor);
 
     SECTION("Check Class Probabilities") {
         const std::vector<double> &prob_classes = model.GetProbClassC();
@@ -62,8 +61,7 @@ TEST_CASE("Test writing model to file") {
         input_file.close();
     }
 
-    model.TrainProbClassC(imageProcessor.GetImages());
-    model.TrainProbEachPixel(imageProcessor.GetImages());
+    model.Train(imageProcessor);
 
     std::ofstream output_file("/Users/nrking0/code/cinder_0.9.2_mac/my-projects/naive-bayes/data/test_output.txt");
     if (output_file.is_open()) {

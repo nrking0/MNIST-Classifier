@@ -15,8 +15,7 @@ int main() {
   }
 
   std::cout << imageProcessor;
-  model.TrainProbClassC(imageProcessor.GetImages());
-  model.TrainProbEachPixel(imageProcessor.GetImages());
+  model.Train(imageProcessor);
 
   std::ofstream output_file("../data/model_data.txt");
   if (output_file.is_open()) {

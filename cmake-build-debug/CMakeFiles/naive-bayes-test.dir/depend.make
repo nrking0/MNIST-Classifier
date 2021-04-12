@@ -3,6 +3,7 @@
 
 CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../include/core/classifier.h
 CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../include/core/image.h
+CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../include/core/image_processor.h
 CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../include/core/model.h
 CMakeFiles/naive-bayes-test.dir/src/core/classifier.cc.o: ../src/core/classifier.cc
 
@@ -14,6 +15,7 @@ CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.o: ../include/core/i
 CMakeFiles/naive-bayes-test.dir/src/core/image_processor.cc.o: ../src/core/image_processor.cc
 
 CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../include/core/image.h
+CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../include/core/image_processor.h
 CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../include/core/model.h
 CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../src/core/model.cc
 

@@ -5,6 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
+#include <core/image_processor.h>
 
 namespace naivebayes {
 
@@ -15,21 +16,12 @@ public:
     Model();
 
     /**
-     * Trains the model based on images that are received from image processor. This specific method
-     * trains the values associated with the overall probability that an image belongs to a certain class.
+     * Overarching method that calls individual training methods for an image processor.
      *
-     * @param images vector of images that is made by image processor from an external file
+     * @param imageProcessor image processor from which the images will be taken from to
+     * train the model
      */
-    void TrainProbClassC(const std::vector<Image> &images);
-
-    /**
-     * Trains the probability that a pixel belonging to each individual class will be each
-     * shade. This will result in a 4D array with all probabilities.
-     *
-     * @param images images vector of images that is made by image processor from an external file
-     */
-    void TrainProbEachPixel(const std::vector<Image> &images);
-
+    void Train(const ImageProcessor& imageProcessor);
 
     const std::vector<double> &GetProbClassC() const;
     const std::vector<std::vector<std::vector<std::vector<double>>>> &GetProbPixelValues() const;
@@ -61,6 +53,22 @@ private:
     std::vector<std::vector<std::vector<std::vector<double>>>> prob_pixel_shade_;
     std::vector<double> prob_class_c_values;
     int image_size_;
+
+    /**
+     * Trains the model based on images that are received from image processor. This specific method
+     * trains the values associated with the overall probability that an image belongs to a certain class.
+     *
+     * @param images vector of images that is made by image processor from an external file
+     */
+    void TrainProbClassC(const std::vector<Image> &images);
+
+    /**
+     * Trains the probability that a pixel belonging to each individual class will be each
+     * shade. This will result in a 4D array with all probabilities.
+     *
+     * @param images images vector of images that is made by image processor from an external file
+     */
+    void TrainProbEachPixel(const std::vector<Image> &images);
 };
 
 

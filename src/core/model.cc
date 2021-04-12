@@ -4,6 +4,12 @@ namespace naivebayes {
 
 Model::Model() { }
 
+void Model::Train(const ImageProcessor &imageProcessor) {
+    const std::vector<Image>& images = imageProcessor.GetImages();
+    this->TrainProbEachPixel(images);
+    this->TrainProbClassC(images);
+}
+
 std::istream& operator>>(std::istream& input, Model& data) {
     std::string curr_line;
     bool reading_pixel_prob = false;
