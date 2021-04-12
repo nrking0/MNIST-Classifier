@@ -11,6 +11,7 @@ namespace naivebayes {
 
 /** Classes representing a naive-bayes model. */
 class Model {
+
 public:
     /** Basic starter constructor. */
     Model();
@@ -21,7 +22,7 @@ public:
      * @param imageProcessor image processor from which the images will be taken from to
      * train the model
      */
-    void Train(const ImageProcessor& imageProcessor);
+    void Train(ImageProcessor imageProcessor);
 
     const std::vector<double> &GetProbClassC() const;
     const std::vector<std::vector<std::vector<std::vector<double>>>> &GetProbPixelValues() const;

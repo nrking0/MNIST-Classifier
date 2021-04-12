@@ -5,6 +5,11 @@ namespace naivebayes {
 
 Image::Image(int value) {
     this->value_ = value;
+    classification_ = -1;
+}
+
+int Image::GetClassification() const {
+    return classification_;
 }
 
 int Image::GetValue() const {
@@ -25,6 +30,10 @@ int Image::GetPixelShade(int row, int col) const {
 
 void Image::AddPixelRow(const std::vector<int>& row) {
     this->pixels_.push_back(row);
+}
+
+void Image::SetClassification(int classification) {
+    this->classification_ = classification;
 }
 
 std::ostream& operator<<(std::ostream& os, Image& image) {

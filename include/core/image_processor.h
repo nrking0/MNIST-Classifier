@@ -13,7 +13,7 @@ public:
     /** Basic constructor for set up. */
     ImageProcessor();
 
-    const std::vector<Image>& GetImages() const;
+    std::vector<Image>& GetImages();
 
     /**
      * Overload for the input operator to take in a file and process it into a vector of images.

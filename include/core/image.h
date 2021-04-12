@@ -35,10 +35,13 @@ public:
     int GetValue() const;
     int GetSize() const;
     int GetPixelShade(int row, int col) const;
+    int GetClassification() const;
+    void SetClassification(int classification);
 
 private:
     int value_;
     std::vector<std::vector<int>> pixels_;
+    int classification_;
 };
 
 } // namespace naivebayes
