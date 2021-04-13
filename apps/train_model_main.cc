@@ -41,14 +41,15 @@ int main() {
     naivebayes::Classifier classifier = naivebayes::Classifier(model);
     classifier.ClassifyImageSet(imageProcessor);
 
+    for (const naivebayes::Image& image : imageProcessor.GetImages()) {
+        std::cout << image.GetValue() << std::endl;
+        std::cout << image.GetClassification() << std::endl;
+        std::cout << std::endl;
+    }
+
     double accuracy = naivebayes::Classifier::ValidateImageSetClassification(imageProcessor);
     std::cout << accuracy;
 
-//    for (const naivebayes::Image& image : imageProcessor.GetImages()) {
-//        std::cout << image.GetValue() << std::endl;
-//        std::cout << image.GetClassification() << std::endl;
-//        std::cout << std::endl;
-//    }
 
   return 0;
 }
