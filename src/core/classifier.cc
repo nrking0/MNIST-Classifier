@@ -2,7 +2,7 @@
 
 namespace naivebayes {
 
-Classifier::Classifier(Model model) {
+Classifier::Classifier(const Model& model) {
     model_ = model;
 };
 

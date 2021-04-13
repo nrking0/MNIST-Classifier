@@ -10,7 +10,7 @@ namespace naivebayes {
 class Classifier {
 
 public:
-    explicit Classifier(Model model);
+    explicit Classifier(const Model& model);
 
     void ClassifyImageSet(ImageProcessor& imageProcessor);
 
