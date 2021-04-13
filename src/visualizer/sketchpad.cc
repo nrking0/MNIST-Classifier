@@ -64,10 +64,13 @@ void Sketchpad::HandleBrush(const vec2& brush_screen_coords) {
 }
 
 void Sketchpad::Clear() {
-    std::cout << "hi";
   for (std::vector<int>& rows : pixel_shade_vector_) {
       std::fill(rows.begin(), rows.end(), 0);
   }
+}
+
+const std::vector<std::vector<int>> & Sketchpad::GetPixelShadeVector() const {
+    return pixel_shade_vector_;
 }
 
 }  // namespace visualizer

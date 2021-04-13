@@ -16,6 +16,8 @@ public:
      */
     explicit Image(int value);
 
+    explicit Image(const std::vector<std::vector<int>>& image);
+
     /**
      * Adds a row of pixels to the image array. Used when inputting image.
      *

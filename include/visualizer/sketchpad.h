@@ -49,6 +49,8 @@ class Sketchpad {
    */
   void Clear();
 
+  const std::vector<std::vector<int>>& GetPixelShadeVector() const;
+
  private:
   glm::vec2 top_left_corner_;
 

@@ -8,6 +8,14 @@ Image::Image(int value) {
     classification_ = -1;
 }
 
+Image::Image(const std::vector<std::vector<int>>& image) {
+    this->value_ = -1;
+    this->classification_ = -1;
+    for (std::vector<int> rows : image) {
+        this->AddPixelRow(rows);
+    }
+}
+
 int Image::GetClassification() const {
     return classification_;
 }
