@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o"
   "CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o"
   "CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o"
+  "CMakeFiles/naive-bayes-test.dir/tests/classifier_test.cc.o"
   "CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o"
   "CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o"
   "CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o"
