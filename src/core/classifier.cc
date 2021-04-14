@@ -1,4 +1,5 @@
 #include <core/classifier.h>
+#include <limits>
 
 namespace naivebayes {
 
@@ -10,16 +11,16 @@ void Classifier::ClassifyImageSet(ImageProcessor &imageProcessor) {
     std::vector<Image>& images = imageProcessor.GetImages();
 
     for (Image& image : images) {
-        double max_probability = 0.0;
+        double max_probability = -std::numeric_limits<double>::max();
         int max_index = -1;
 
         for (size_t i = 0; i < 10; i++) {
-            double probability = model_.GetProbClassC()[i];
+            double probability = log(model_.GetProbClassC()[i]);
 
             for (size_t row = 0; row < image.GetSize(); row++) {
 
                 for (size_t col = 0; col < image.GetSize(); col++) {
-                    probability = probability * model_.GetProbPixelValues()[row][col][i][image.GetPixelShade(row, col)];
+                    probability += log(model_.GetProbPixelValues()[row][col][i][image.GetPixelShade(row, col)]);
                 }
             }
 
@@ -33,16 +34,16 @@ void Classifier::ClassifyImageSet(ImageProcessor &imageProcessor) {
 }
 
 void Classifier::ClassifyImage(Image &image) {
-    double max_probability = 0.0;
+    double max_probability = -std::numeric_limits<double>::max();
     int max_index = -1;
 
     for (size_t i = 0; i < 10; i++) {
-        double probability = model_.GetProbClassC()[i];
+        double probability = log(model_.GetProbClassC()[i]);
 
         for (size_t row = 0; row < image.GetSize(); row++) {
 
             for (size_t col = 0; col < image.GetSize(); col++) {
-                probability = probability * model_.GetProbPixelValues()[row][col][i][image.GetPixelShade(row, col)];
+                probability += log(model_.GetProbPixelValues()[row][col][i][image.GetPixelShade(row, col)]);
             }
         }
 
