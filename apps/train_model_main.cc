@@ -9,7 +9,7 @@ int main() {
     naivebayes::Model model = naivebayes::Model();
     naivebayes::ImageProcessor imageProcessor = naivebayes::ImageProcessor();
 
-//  std::ifstream input_file("../data/trainingimagesandlabels.txt");
+//  std::ifstream input_file("../data/test.txt");
 //  if (input_file.is_open()) {
 //      input_file >> imageProcessor;
 //      input_file.close();
@@ -18,7 +18,7 @@ int main() {
 //  std::cout << imageProcessor;
 //  model.Train(imageProcessor);
 //
-//  std::ofstream output_file("../data/model_data.txt");
+//  std::ofstream output_file("../data/test_output.txt");
 //  if (output_file.is_open()) {
 //      output_file << model;
 //      output_file.close();
@@ -26,13 +26,13 @@ int main() {
 
 
 
-    std::ifstream input_file("../data/testimagesandlabels.txt");
+    std::ifstream input_file("../data/test_data.txt");
     if (input_file.is_open()) {
         input_file >> imageProcessor;
         input_file.close();
     }
 
-    std::ifstream input_file2("../data/model_data.txt");
+    std::ifstream input_file2("../data/test_output.txt");
     if (input_file2.is_open()) {
         input_file2 >> model;
         input_file2.close();
@@ -48,7 +48,12 @@ int main() {
     }
 
     double accuracy = naivebayes::Classifier::ValidateImageSetClassification(imageProcessor);
-    std::cout << accuracy;
+    std::cout << accuracy << std::endl;
+
+    std::vector<double> prob1 = classifier.ClassifyImage(imageProcessor.GetImages()[0]);
+    for (double d : prob1) {
+        std::cout << d << std::endl;
+    }
 
 
   return 0;
