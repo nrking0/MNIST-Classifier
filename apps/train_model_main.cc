@@ -26,13 +26,13 @@ int main() {
 
 
 
-    std::ifstream input_file("../data/test_data.txt");
+    std::ifstream input_file("../data/testimagesandlabels.txt");
     if (input_file.is_open()) {
         input_file >> imageProcessor;
         input_file.close();
     }
 
-    std::ifstream input_file2("../data/test_output.txt");
+    std::ifstream input_file2("../data/model_data.txt");
     if (input_file2.is_open()) {
         input_file2 >> model;
         input_file2.close();
@@ -50,11 +50,5 @@ int main() {
     double accuracy = naivebayes::Classifier::ValidateImageSetClassification(imageProcessor);
     std::cout << accuracy << std::endl;
 
-    std::vector<double> prob1 = classifier.ClassifyImage(imageProcessor.GetImages()[0]);
-    for (double d : prob1) {
-        std::cout << d << std::endl;
-    }
-
-
-  return 0;
+    return 0;
 }
