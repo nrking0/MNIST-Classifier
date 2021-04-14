@@ -33,7 +33,7 @@ void Classifier::ClassifyImageSet(ImageProcessor &imageProcessor) {
     }
 }
 
-void Classifier::ClassifyImage(Image &image) {
+double Classifier::ClassifyImage(Image &image) {
     double max_probability = -std::numeric_limits<double>::max();
     int max_index = -1;
 
@@ -53,6 +53,7 @@ void Classifier::ClassifyImage(Image &image) {
         }
     }
     image.SetClassification(max_index);
+    return max_probability;
 }
 
 double Classifier::ValidateImageSetClassification(ImageProcessor &imageProcessor) {

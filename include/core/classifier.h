@@ -14,7 +14,7 @@ public:
 
     void ClassifyImageSet(ImageProcessor& imageProcessor);
 
-    void ClassifyImage(Image& image);
+    double ClassifyImage(Image& image);
 
     static double ValidateImageSetClassification(ImageProcessor& imageProcessor);
 
