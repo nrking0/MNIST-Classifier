@@ -33,7 +33,8 @@ void Classifier::ClassifyImageSet(ImageProcessor &imageProcessor) {
     }
 }
 
-double Classifier::ClassifyImage(Image &image) {
+std::vector<double> Classifier::ClassifyImage(Image &image) {
+    std::vector<double> probabilities;
     double max_probability = -std::numeric_limits<double>::max();
     int max_index = -1;
 
@@ -47,13 +48,14 @@ double Classifier::ClassifyImage(Image &image) {
             }
         }
 
+        probabilities.push_back(probability);
         if (probability > max_probability) {
             max_probability = probability;
             max_index = i;
         }
     }
     image.SetClassification(max_index);
-    return max_probability;
+    return probabilities;
 }
 
 double Classifier::ValidateImageSetClassification(ImageProcessor &imageProcessor) {
@@ -61,9 +63,11 @@ double Classifier::ValidateImageSetClassification(ImageProcessor &imageProcessor
     int correct_classification_count = 0;
 
     for (const Image& image : imageProcessor.GetImages()) {
+
         if (image.GetValue() == image.GetClassification()) {
             image_count++;
             correct_classification_count++;
+
         } else {
             image_count ++;
         }
