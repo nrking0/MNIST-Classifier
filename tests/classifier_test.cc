@@ -61,3 +61,29 @@ TEST_CASE("Check Accuracy for real set") {
 
     REQUIRE(accuracy > 0.7);
 }
+
+TEST_CASE("Testing likelihood on larger image size") {
+    Model model = Model();
+    ImageProcessor imageProcessor = ImageProcessor();
+
+    std::ifstream input_file("/Users/nrking0/code/cinder_0.9.2_mac/my-projects/naive-bayes/data/testimagesandlabels.txt");
+    if (input_file.is_open()) {
+        input_file >> imageProcessor;
+        input_file.close();
+    }
+
+    std::ifstream input_file2("/Users/nrking0/code/cinder_0.9.2_mac/my-projects/naive-bayes/data/model_data.txt");
+    if (input_file2.is_open()) {
+        input_file2 >> model;
+        input_file2.close();
+    }
+
+    Classifier classifier = Classifier(model);
+    std::vector<double> likelihoods = classifier.ClassifyImage(imageProcessor.GetImages()[0]);
+
+    SECTION("Likelihood test") {
+        REQUIRE(likelihoods[0] == Approx(-387.402).epsilon(0.01));
+        REQUIRE(likelihoods[1] == Approx(-211.086).epsilon(0.01));
+        REQUIRE(likelihoods[2] == Approx(-273.472).epsilon(0.01));
+    }
+}
