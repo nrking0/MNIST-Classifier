@@ -4,7 +4,7 @@ namespace naivebayes {
 
 ImageProcessor::ImageProcessor() = default;
 
-const std::vector<Image> & ImageProcessor::GetImages() const {
+std::vector<Image>& ImageProcessor::GetImages() {
     return images_;
 }
 

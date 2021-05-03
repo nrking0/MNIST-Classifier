@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout v2.11.1 --
+  COMMAND "/usr/bin/git"  checkout v2.11 --
   WORKING_DIRECTORY "/Users/nrking0/Code/cinder_0.9.2_mac/my-projects/naive-bayes/cmake-build-debug/_deps/catch2-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v2.11.1'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v2.11'")
 endif()
 
 set(init_submodules TRUE)

@@ -19,6 +19,10 @@ CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../include/core/image_proce
 CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../include/core/model.h
 CMakeFiles/naive-bayes-test.dir/src/core/model.cc.o: ../src/core/model.cc
 
+CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/core/classifier.h
+CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/core/image.h
+CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/core/image_processor.h
+CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/core/model.h
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/visualizer/naive_bayes_app.h
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/naive-bayes-test.dir/src/visualizer/naive_bayes_app.cc.o: /Users/nrking0/Code/cinder_0.9.2_mac/include/boost/assert.hpp
@@ -1747,21 +1751,19 @@ CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o: /Users/nrking0/Co
 CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o: /Users/nrking0/Code/cinder_0.9.2_mac/include/glm/vector_relational.hpp
 CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o: ../src/visualizer/sketchpad.cc
 
+CMakeFiles/naive-bayes-test.dir/tests/classifier_test.cc.o: ../tests/classifier_test.cc
+
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: ../include/core/image.h
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: ../include/core/image_processor.h
 CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: ../tests/image_processor_test.cc
-CMakeFiles/naive-bayes-test.dir/tests/image_processor_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
 
 CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o: ../include/core/image.h
 CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o: ../tests/image_test.cc
-CMakeFiles/naive-bayes-test.dir/tests/image_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
 
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: ../include/core/image.h
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: ../include/core/image_processor.h
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: ../include/core/model.h
 CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: ../tests/model_test.cc
-CMakeFiles/naive-bayes-test.dir/tests/model_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
 
 CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.o: ../tests/test_main.cc
-CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
 

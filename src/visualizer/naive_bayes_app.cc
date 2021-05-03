@@ -8,6 +8,15 @@ NaiveBayesApp::NaiveBayesApp()
     : sketchpad_(glm::vec2(kMargin, kMargin), kImageDimension,
                  kWindowSize - 2 * kMargin) {
   ci::app::setWindowSize((int) kWindowSize, (int) kWindowSize);
+
+    naivebayes::Model model;
+    std::ifstream input_file("/Users/nrking0/code/cinder_0.9.2_mac/my-projects/naive-bayes/data/model_data.txt");
+    if (input_file.is_open()) {
+        input_file >> model;
+        input_file.close();
+    }
+
+    classifier_ = naivebayes::Classifier(model);
 }
 
 void NaiveBayesApp::draw() {
@@ -35,14 +44,16 @@ void NaiveBayesApp::mouseDrag(ci::app::MouseEvent event) {
 
 void NaiveBayesApp::keyDown(ci::app::KeyEvent event) {
   switch (event.getCode()) {
+    case ci::app::KeyEvent::KEY_BACKSPACE:
+        sketchpad_.Clear();
+        current_prediction_ = -1;
+        break;
     case ci::app::KeyEvent::KEY_RETURN:
-      // ask your classifier to classify the image that's currently drawn on the
-      // sketchpad and update current_prediction_
-      break;
+        Image image = Image(sketchpad_.GetPixelShadeVector());
+        classifier_.ClassifyImage(image);
+        current_prediction_ = image.GetClassification();
+        break;
 
-    case ci::app::KeyEvent::KEY_DELETE:
-      sketchpad_.Clear();
-      break;
   }
 }
 

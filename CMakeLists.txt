@@ -60,7 +60,8 @@ list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
 
 list(APPEND TEST_FILES tests/model_test.cc
                         tests/image_test.cc
-                        tests/image_processor_test.cc)
+                        tests/image_processor_test.cc
+                        tests/classifier_test.cc)
 
 add_executable(train-model apps/train_model_main.cc ${CORE_SOURCE_FILES})
 target_include_directories(train-model PRIVATE include)

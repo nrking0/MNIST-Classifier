@@ -415,6 +415,33 @@ src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
+tests/classifier_test.o: tests/classifier_test.cc.o
+
+.PHONY : tests/classifier_test.o
+
+# target to build an object file
+tests/classifier_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/classifier_test.cc.o
+.PHONY : tests/classifier_test.cc.o
+
+tests/classifier_test.i: tests/classifier_test.cc.i
+
+.PHONY : tests/classifier_test.i
+
+# target to preprocess a source file
+tests/classifier_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/classifier_test.cc.i
+.PHONY : tests/classifier_test.cc.i
+
+tests/classifier_test.s: tests/classifier_test.cc.s
+
+.PHONY : tests/classifier_test.s
+
+# target to generate assembly for a file
+tests/classifier_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/classifier_test.cc.s
+.PHONY : tests/classifier_test.cc.s
+
 tests/image_processor_test.o: tests/image_processor_test.cc.o
 
 .PHONY : tests/image_processor_test.o
@@ -558,6 +585,9 @@ help:
 	@echo "... src/visualizer/sketchpad.o"
 	@echo "... src/visualizer/sketchpad.i"
 	@echo "... src/visualizer/sketchpad.s"
+	@echo "... tests/classifier_test.o"
+	@echo "... tests/classifier_test.i"
+	@echo "... tests/classifier_test.s"
 	@echo "... tests/image_processor_test.o"
 	@echo "... tests/image_processor_test.i"
 	@echo "... tests/image_processor_test.s"

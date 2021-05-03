@@ -4,8 +4,8 @@ namespace naivebayes {
 
 Model::Model() { }
 
-void Model::Train(const ImageProcessor &imageProcessor) {
-    const std::vector<Image>& images = imageProcessor.GetImages();
+void Model::Train(ImageProcessor imageProcessor) {
+    std::vector<Image>& images = imageProcessor.GetImages();
     this->TrainProbEachPixel(images);
     this->TrainProbClassC(images);
 }

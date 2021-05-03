@@ -16,6 +16,8 @@ public:
      */
     explicit Image(int value);
 
+    explicit Image(const std::vector<std::vector<int>>& image);
+
     /**
      * Adds a row of pixels to the image array. Used when inputting image.
      *
@@ -35,10 +37,13 @@ public:
     int GetValue() const;
     int GetSize() const;
     int GetPixelShade(int row, int col) const;
+    int GetClassification() const;
+    void SetClassification(int classification);
 
 private:
     int value_;
     std::vector<std::vector<int>> pixels_;
+    int classification_;
 };
 
 } // namespace naivebayes
